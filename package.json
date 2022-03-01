@@ -1,0 +1,36 @@
+{
+  "name": "crud_node_express_typeorm",
+  "version": "1.0.0",
+  "description": "Crud para servir de base",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config ./dist/server",
+    "compile": "tsc && node -r dotenv/config ./dist/server",
+    "dev": "nodemon -e ts, json --ignore dist --exec \"npm run compile\"",
+    "typeorm": "ts-node-dev node_modules/.bin/typeorm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickalcantara/crud_node_express_typeorm.git"
+  },
+  "author": "Patrick Alcantara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickalcantara/crud_node_express_typeorm/issues"
+  },
+  "homepage": "https://github.com/patrickalcantara/crud_node_express_typeorm#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "joi": "^17.6.0",
+    "mysql2": "^2.3.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.44"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/joi": "^17.2.3",
+    "@types/node": "^17.0.21"
+  }
+}
