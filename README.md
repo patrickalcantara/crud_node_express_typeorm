@@ -7,3 +7,4 @@
 * Caso contrario rode o script compile (npm run compile)
 
 ###### Obs.: Faltou usar o Joi que estava instalado no projeto... :)
+###### Obs. 2: O banco usado no exemplo foi o Mysql no projeto tem as migrations
