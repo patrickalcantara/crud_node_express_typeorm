@@ -34,7 +34,8 @@ export class CategoryRepository {
   async getAll(): Promise<Array<Category> | Error> {
     const allCategories = await this.manager.find(Category);
 
-    if (!allCategories) return new Error("Não há cadastros de categorias!");
+    if (allCategories.length === 0)
+      return new Error("Não há cadastros de categorias!");
 
     return allCategories;
   }
